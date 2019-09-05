@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sistema de Evaluación"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/sp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/valores"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prácticas Teóricas"
+                    android:layout_weight="1"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="prom:"
+                    android:layout_weight="2"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/promedio1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:layout_weight="2"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Práctica 1"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/teorico1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:hint="00"
+                    android:inputType="none|number|numberDecimal"
+                    android:paddingStart="9dp"
+                    android:paddingBottom="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Práctica 2"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/teorico2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="00"
+                    android:layout_weight="6"
+                    android:paddingStart="9dp"
+                    android:inputType="none|number|numberDecimal"
+                    android:paddingBottom="10dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prácticas Laboratorio"
+                    android:layout_weight="1"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="prom:"
+                    android:layout_weight="2"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/promedio2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:layout_weight="2"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Práctica 1"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/lab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="00"
+                    android:layout_weight="6"
+                    android:inputType="none|number|numberDecimal"
+                    android:paddingStart="9dp"
+                    android:paddingBottom="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Práctica 2"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/lab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="00"
+                    android:inputType="none|number|numberDecimal"
+                    android:layout_weight="6"
+                    android:paddingStart="9dp"
+                    android:paddingBottom="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Práctica 3"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/lab3"
+                    android:layout_width="match_parent"
+                    android:inputType="none|number|numberDecimal"
+                    android:layout_height="wrap_content"
+                    android:hint="00"
+                    android:layout_weight="6"
+                    android:paddingStart="9dp"
+                    android:paddingBottom="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Práctica 4"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/lab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="00"
+                    android:inputType="none|number|numberDecimal"
+                    android:layout_weight="6"
+                    android:paddingStart="9dp"
+                    android:paddingBottom="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="10dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Promedio:"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24dp"/>
+                <TextView
+                    android:id="@+id/resultado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:paddingStart="8dp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textSize="24dp"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/resu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resultado"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAlignment="center"
+                android:textSize="24dp"/>
+
+            <Button
+                android:id="@+id/calcular"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="24dp"
+                android:paddingBottom="24dp"
+                android:layout_marginTop="20dp"
+                android:text="CALCULAR" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
